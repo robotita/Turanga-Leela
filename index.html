@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="css/cv.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="circle" class="circle"></div>
+
+
+    <div id="nav-mobile">
+      <input type="checkbox" name="" id="navcheck">
+      <div class="hamburger-lines">
+          <span class="line line1"></span>
+          <span class="line line2"></span>
+          <span class="line line3"></span>
+      </div>
+    </div>
+
+    <nav id="navegacion" class="fixed">
+
+      <div class="nav-section md:mt-10 md:ml-10 mt-20 ml-5 pr-5 md:pr-0">
+        <div class="nav-link">
+          <a href="#datos-personales" class="hover:opacity-50">Datos personales</a>
+        </div>
+        <div class="nav-link">
+          <a href="#experiencia" class="hover:opacity-50">Experiencia</a>
+        </div>
+        <br>
+        <div class="nav-link">
+          <a href="#habilidades" class="hover:opacity-50">Habilidades</a>
+        </div>
+        <div class="nav-link">
+          <a href="#logros" class="hover:opacity-50">Logros</a>
+        </div>
+        <div class="nav-link">
+          <a href="#idomas" class="hover:opacity-50">Idiomas</a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container flex justify-center">
+      <div class="md:w-2/5 md:ml-0 ml-14 md:m-20 w-10/12 mt-20">
+        <!--PRESENTACION-->
+        <div id="presentacion" class="mb-20">
+          <h3>hola, soy</h3>
+          <h1 class="text-6xl font-bold underline mb-10">Turanga Leela</h1>
+
+          <img class="mt-5 mb-10" src="img/leela.png" />
+
+          <p>
+            Soy capitana de la <b>Nave Planet Express</b> de Futurama y
+            una de las pocas mutantes cíclopes pilotos en la galaxia toda.
+          </p>
+        </div>
+
+        <hr class="h-1 bg-black-500 mb-10" />
+        <!--DATOS PERSONALES-->
+        <div id="datos-personales" class="mb-20">
+          <h2 class="text-5xl font-bold underline mb-10 accordion active" >Datos personales</h2>
+
+          <div class="panel" style="display:block">
+            <p><b>Nacimiento:</b> 29 de Julio de 2975</p>
+            <p><b>Lugar de Residencia:</b> New New York City</p>
+            <p><b>Estatura:</b>	1,82 m (6′ 0″)</p>
+            <p><b>Peso:</b>	62 kg (136 lb)</p>
+          </div>
+        </div>
+
+
+        <hr class="h-1 bg-black-500 mb-10" />
+        <!--EXPERIENCIA-->
+        <div id="experiencia" class="mb-20">
+          <h2 class="text-5xl font-bold underline mb-10 accordion active">Experiencia</h2>
+          <div class="panel" style="display:block">
+            <ul>
+              <li>• Capitana Espacial en el Planet Express (empresa de mensajería interplanetaria)</li>
+              <li>• Asignadora en Applied Cryogenics (laboratorio de criogénia) - Oficial 1BDI</li>
+            </ul>
+          </div>
+        </div>
+
+
+        <hr class="h-1 bg-black-500 mb-10" />
+        <!--HABILIDADES-->
+        <div id="habilidades" class="mb-20">
+          <h2 class="text-5xl font-bold underline mb-10 accordion active">Habilidades</h2>
+          <div class="panel" style="display:block">
+            <ul>
+              <li>• Capitana experta en naves que llegan a la velocidad de la luz</li>
+              <li>• Cinturón negro en Arcturian Kung-Fu</li>
+              <li>• Primera mujer en la liga de Blatabolde primera división. </li>
+            </ul>
+          </div>
+        </div>
+
+
+        <hr class="h-1 bg-black-500 mb-10" />
+        <!--LOGROS-->
+        <div id="logros" class="mb-20">
+          <h2 class="text-5xl font-bold underline mb-10 accordion active">Logros</h2>
+          <div class="panel" style="display:block">
+            <p class="mb-10">
+              Mi nombre es el título de la obra orquestal más conocida de Olivier Messiaen (1908-1992), la sinfonía Turanga-lila (1948), famosa por su empleo del ondas martenot, un antiguo instrumento electrónico inventado en 1928 por el compositor francés Maurice Martenot, usado antiguamente para temas musicales de películas de ciencia ficción y programas de televisión. 
+            </p>
+
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/eCO7le_6LzU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>          
+
+          </div>
+          
+        </div>
+
+
+        <hr class="h-1 bg-black-500 mb-10" />
+        <!--IDIOMAS-->
+        <div id="logros" class="mb-20">
+          <h2 class="text-5xl font-bold underline mb-10 accordion active">Idiomas</h2>
+          <div class="panel" style="display:block">
+            <p class="mb-10">
+              <ul>
+                <li>• Inglés</li>
+                <li>• Alienese</li>
+                <li>• AL1</li>
+                <li>• AL2</li>
+              </ul>
+            </p>
+          </div>
+          
+        </div>
+
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/kinet@2.2.1/dist/kinet.min.js"></script>
+    <script src="js/cv.js"></script>
+  </body>
+</html>
